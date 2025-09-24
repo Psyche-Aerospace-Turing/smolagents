@@ -384,6 +384,7 @@ class MultiStepAgent(ABC):
                     "task": {"type": "string", "description": "Long detailed description of the task."},
                     "additional_args": {
                         "type": "object",
+                        "nullable": True,
                         "description": "Dictionary of extra inputs to pass to the managed agent, e.g. images, dataframes, or any other contextual data it may need.",
                     },
                 }
